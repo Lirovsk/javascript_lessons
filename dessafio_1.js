@@ -17,4 +17,4 @@ gasPrice = 4.69;
 
 totalValue = (distance/gasConsumption) * gasPrice;
 
-console.log(totalValue);
+console.log(totalValue.toFixed(2)); // O método toFixed(2) é utilizado para limitar o número de casas decimais a serem exibidas. Neste caso, 2 casas decimais.
