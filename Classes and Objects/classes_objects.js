@@ -28,4 +28,23 @@ printf(pessoa.idade + '\n');
 printf(pessoa['altura']);
 printf(pessoa['nome']);
 
+// Definindo uma classe
+// Defining a class
+class people {
+    name;
+    age;
+    height;
 
+    descrever(){
+        console.log(`Meu nome é ${this.name} e tenho ${this.age} anos.`);
+    }
+}
+
+// Criando uma instância da classe people
+// Creating an instance of the people class
+const joao = new people();
+joao.name = 'João Paulo';
+joao.age = 20;
+joao.height = 1.90;
+
+joao.descrever();
