@@ -35,6 +35,12 @@ class people {
     age;
     height;
 
+    constructor (name, age, height){
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+
     descrever(){
         console.log(`Meu nome é ${this.name} e tenho ${this.age} anos.`);
     }
@@ -42,9 +48,8 @@ class people {
 
 // Criando uma instância da classe people
 // Creating an instance of the people class
-const joao = new people();
-joao.name = 'João Paulo';
-joao.age = 20;
-joao.height = 1.90;
+printf('');
+const joao = new people('João Paulo', 20, 1.7);
 
-joao.descrever();
+printf(joao.name);
+printf(joao);
