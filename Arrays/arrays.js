@@ -8,3 +8,6 @@ let arrayVazia = [];
 
 console.log(firstArray);
 console.log(arrayVazia);
+
+console.log(firstArray[1]);
+console.log(firstArray.length);
