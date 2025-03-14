@@ -9,6 +9,11 @@ console.log(array); // Imprime a arrays
 array.push(6); // Adiciona o número 6 ao final da array
 console.log(array); // Imprime a array após a adição do número 6
 
+// É possível declarar arrasy usando um contrutos de arrays
+// It is possible to declare an arrays using a constructor
+let arrayC = new Array(1, 2, 3, 4, 5);
+console.log(arrayC); // Imprimindo a array criada com o construtor / Printing the arrays created using the constructor
+
 // O segundo método é o pop(), que remove o último elemento de uma array
 // The second method is pop(), which removes the last element of an array
 let array2 = [1, 2, 3, 4, 5];
