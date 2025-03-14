@@ -53,4 +53,9 @@ console.log(array5);
 array5.splice(1, 1, 'dois'); // adiciona um item removendo o que estava no seu lugar anetriomente
 console.log(array5);
 
-
+// Como criar sublista de uma array
+// how to create subarrays from another array
+let array6 = [1, 2, 3, 4, 5];
+subArray = array6.slice(0,2);
+console.log(subArray);
+console.log(array6);
