@@ -33,4 +33,24 @@ array3Shift = array3.shift();
 console.log(array3); // Imprimindo a array após ter ser primeiro item removido / Printing the array after its first has been removed
 console.log(array3Shift); // Imprimindo o item removido da array / Printing the removed item from the array
 
+// Propriedade lenght, retorna o tamanho da array.
+// Lenght property, return the lenght of the array.
+let array4 = [1, 1, 1, 1, 1];
+console.log(array4.length); // Imprimindo o tamanho dessa array / Printing the size of this array
+// O tamanho de uma array é ajustado ao adicionar um item á ela, o mesmo ocorre ao remover um item
+// The lenght of an array is ajusted when an item is added or removed
+array4.push(1);
+console.log(array4.length);
+
+// The fourth method is the splice(). It's responsible for addin and removing items on specified plas of an array
+// O quarto método é o splice(). é responsável por adicionar e remover itens em locais definidos de uma array
+let array5 = [1, 2, 3, 4, 5];
+array5.splice(1, 1);
+console.log(array5);
+
+array5.splice(1,0,2); // Adiciona um item sem remover nenhum outro
+console.log(array5);
+array5.splice(1, 1, 'dois'); // adiciona um item removendo o que estava no seu lugar anetriomente
+console.log(array5);
+
 
