@@ -47,4 +47,11 @@ let foundIndex = array9.findIndex(element => element % 2 === 0); // Retorna o í
 console.log(foundIndex);
 // OBS: O método findIndex() não retorna mais de um índice
 
+// Método every() e some() - Esses método servem para retornar um valor booleano dada uma função como argumento
+// Every() and some() methods - These methods return a boolean value for a given function as parameter
+let array10 = [1, 2, 4, 6];
+let allEvennumbers = array10.every(num => num % 2 === 0); // Essa funcção retornará verdadeiro caso todos os número da lista sejam pares / This fucntion will return True in case all the numbers in it are even.
+console.log(allEvennumbers);
+let someEvenNumbers = array10.some(num => num % 2 === 0); // Essa funcção retornará verdadeiro caso um dos números da lista for par / This function will returna True in case at least on number of it ir even
+console.log(someEvenNumbers);
 
