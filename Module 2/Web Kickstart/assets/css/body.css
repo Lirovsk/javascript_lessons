@@ -27,3 +27,39 @@ h2{
 button{
     object-position: 50cm;
 }
+
+.post1{
+    text-align: left;
+    padding: .3rem;
+    border-radius: 1rem;
+    background-color: red;
+    margin: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post2{
+    text-align: center;
+    padding: .3rem;
+    border-radius: 1rem;
+    background-color: rgb(51, 51, 51);
+    margin: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+ol.liststyle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin: 0.3rem;
+    list-style-type: none;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.imgpost{
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+    align-self: center;
+}
