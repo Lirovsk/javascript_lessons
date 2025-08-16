@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
     <link rel="stylesheet" href=".\node_modules\normalize.css\normalize.css">
-    <link rel="stylesheet" href="assets/css/body.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href=".\assets\css\style.css">
+    <script src=".\assets\js\actions.js"></script>
 </head>
 <body>
-    <div>
-        <section>
-            <h1>Meu Blog</h1>
+    <header>
+        <ul>
+            <li >
+            <div class="logo">
+                <img src=".\assets\images\mycat.png" alt="A cute imagem of octocat">
+            </div>
+            </li>
+            <li>
+                <div class="organize">
+                <h1>O tal do dev</h1>
+                <ul class="links">
+                    <li><a href=".\index.html">Início</a></li>
+                    <li><a href=".\jornada-principal.html">Jornada Principal</a></li>
+                    <li><a href=".\noticias.html">Notícias</a></li>
+                    <li><a href=".\foruns.html">forúms</a></li>
+                    <li><a href=".\sobre.html">Login</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+        
+    </header>
+    <main>
+        <p>Não queria dizer nada, mas este texto vai <p id="jump">PULAR</p></p>
 
-            <ol class="liststyle">
-                <li class="post1">
-                    <h2>Post 1</h2>
-                    <img src=".\assets\images\codercat.jpg" alt="Imagem de um gato com óculos de sol" class="imgpost">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post2">
-                    <h2>Post 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post2">
-                    <h2>Post 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post1">
-                    <h2>Post 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post1">
-                    <h2>Post 5</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post2">
-                    <h2>Post 6</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post2">
-                    <h2>Post 7</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post1">
-                    <h2>Post 8</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-                <li class="post1">
-                    <h2>Post 9</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                </li>
-            </ol>
-        </section>
-    </div>
+    </main>
+    <footer>
+        <br>
+        <ul class="basicDivision">
+            <li>
+                Como me achar?
+                <div class="links">
+                    <ul class="documentationLinks2">
+                        <li><a href="www.linkedin.com/in/joão-vitor-lira-araujo" class="docReferences2">LinkedIn</a></li>
+                        <li><a href="mailto:araujojv04@yahoo.com" class="docReferences2">Email</a></li>
+                        <li><a href="" class="docReferences2">Menssagem direta</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                Fonte da documentação
+                <div class="links">
+                <ul class="documentationLinks">
+                    <li><a class="docReferences" href="https://flask.palletsprojects.com/en/stable/">Flask</a></li>
+                    <li><a class="docReferences" href="https://developer.mozilla.org/pt-BR/">Mozilla</a></li>
+                    <li><a class="docReferences" href="https://www.w3schools.com/">w3schools</a></li>
+                    <li><a class="docReferences" href="https://learn.microsoft.com/pt-br/">Microsoft Learn</a></li>
+                    <li><a class="docReferences" href="https://www.dio.me/">Dio</a></li>
+                    <li></li>
+                </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="link-forMe">
+                    <p>Desenvolvido por <a href="https://github.com/Lirovsk">Lirovsk</a></p>
+                </div>
+            </li>
+        </ul>
+    </footer>
         
 </body>
 </html>
