@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Playfair Display';
     src: url('../fonts/PlayfairDisplay.ttf') format('truetype');
     font-style: normal;
 }
@@ -28,6 +28,8 @@
     font-style: normal;
 }
 
+
+
 html, body {
     height: 100%;
 }
@@ -37,6 +39,7 @@ body{
     flex-direction: column;
     min-height: 100%;
     background-color: whitesmoke;
+    margin: 0;
 }
 
 main{
@@ -47,12 +50,14 @@ main{
 
 header{
     background-color: rgb(207, 80, 80);
-    
+    margin-bottom: 0;
+    padding-bottom: 0;    
 }
 
 header ul{
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     padding-left:.5rem;
     li{
         box-sizing: border-box;
@@ -61,27 +66,36 @@ header ul{
     }
 }
 
-header h1{
-    font-family: 'Orbitron', sans-serif;
-    margin-left: .5rem;
-}
+
 
 header ul.links{
     list-style: none;
-    display: inline-flex;
-    padding-left:.5rem;
+    padding-top: .7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left:0;
+    @media(min-width: 600px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(min-width: 900px){
+        display: flex;
+        flex-direction: row;
+    }
     li{
         box-sizing: border-box;
         text-align: left;
-        padding: .8rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: .2rem;
+        @media(min-width: 700px){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
 }
 
 header a{
     color: black;
     text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
 }
 
 header img{
@@ -92,6 +106,13 @@ header img{
 
 header div.logo{
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        margin: 0;
+        padding-top: 4rem;
+    }
 }
 
 header div.organize{
@@ -106,28 +127,41 @@ header div.organize{
 main{
     
     margin: 2rem;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    @media(min-width: 700px){
+        margin-left: 4rem;
+        margin-right: 4rem;
+    };
+
+    @media(min-width: 1000px){
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
     
+
+    h1.home{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(109, 11, 11);
+        font-size: 1.5rem;
+    }
+    h2.home{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+    }
+    h3.home{
+        font-family: 'Roboto', sans-serif;
+        color: rgba(109, 11, 11, 0.849);
+        font-size: 1.3rem;
+    }
     p{
         text-align: justify;
+        font-family: 'Roboto', sans-serif;
     }
 }
 
 
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
-}
 
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background: red;
-}
 
 
 
@@ -141,12 +175,16 @@ footer{
 footer ul.basicDivision{
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin: 0;
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 2fr 1fr;
+        
+    }
     li{
         box-sizing: border-box;
-        margin: 1rem;
+        margin: 0;
         text-align: center;
         color: black;
     }
@@ -172,13 +210,18 @@ footer ul.documentationLinks{
     margin-top: .4rem;
     padding-top: .4rem;
     padding-bottom: .6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     li{
         box-sizing: border-box;
         margin: 0;
         margin-left: 1rem;
-        padding-top: .2rem;
+        padding-right: 1rem;
+        padding-top: .3rem;
         text-align: left;
         background-color: inherit;
     }
@@ -198,20 +241,21 @@ footer ul.documentationLinks2{
         box-sizing: border-box;
         margin: 0;
         margin-left: 1rem;
-        padding-top: .2rem;
+        margin-right: 1rem;
+        padding-top: .3rem;
         text-align: left;
         background-color: inherit;
     }
 }
 
 footer a.docReferences{
-    font-size: 12px;
+    font-size: .9rem;
     color: black;
     text-decoration: none;
 }
 
 footer a.docReferences2{
-    font-size: 12px;
+    font-size: .9rem;
     color: black;
     text-decoration: none;
 }

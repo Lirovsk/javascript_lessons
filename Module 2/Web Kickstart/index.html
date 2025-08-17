@@ -13,18 +13,18 @@
         <ul>
             <li >
             <div class="logo">
-                <img src=".\assets\images\mycat.png" alt="A cute imagem of octocat">
+                <img src=".\assets\images\mycat.png" alt="A cute imagem of octocat" id="logo" hover>
+                <h1>O tal do dev</h1>
             </div>
             </li>
             <li>
                 <div class="organize">
-                <h1>O tal do dev</h1>
                 <ul class="links">
-                    <li><a href=".\index.html">Início</a></li>
-                    <li><a href=".\jornada-principal.html">Jornada Principal</a></li>
-                    <li><a href=".\noticias.html">Notícias</a></li>
-                    <li><a href=".\foruns.html">forúms</a></li>
-                    <li><a href=".\sobre.html">Login</a></li>
+                    <li><a href=".\index.html" class="link">Início</a></li>
+                    <li><a href=".\jornada-principal.html" class="link">Jornada Principal</a></li>
+                    <li><a href=".\noticias.html" class="link">Notícias</a></li>
+                    <li><a href=".\foruns.html" class="link">forúms</a></li>
+                    <li><a href=".\sobre.html" class="link">Login</a></li>
                 </ul>
                 </div>
             </li>
@@ -32,7 +32,61 @@
         
     </header>
     <main>
-        <p>Não queria dizer nada, mas este texto vai <p id="jump">PULAR</p></p>
+        <h1 class="home">Chegou de paraquedas aqui? entenda o que é esse site mal feito (e porque ele está mal feito)</h1>
+        <h2 class="home">A ideia inicial e objetivo do site</h2>
+        <p>
+            Quando se trata de programação, a gente pensa em algo complexo, difícil e longe da nossa realidade (Pelo menos eu pensava assim). 
+            Mas quando a começamos a estudar, iniciar nossos projetos ou, no bom português, colocar a cara a tapa, percebemos que o processo de aprendizagem da programação se trata mais de uma luta contra a sua vontade de desistir do que uma luta contra os livros.
+        </p>
+        <p>
+            Passamos boa parte do tempo tentando gravar as regras básicas, implementar uma lógica clara e escrever um código limpo. 
+            Se você, assim como eu deu a vida na hora de aprender lógica de programação, você sabe deve sempre esbarrar em um desafio: aquela regra de manipulação bem específica de um tipo de variável “tal”. Para ser honesto acho que todos nós, iniciantes, passamos por isso e, por esse motivo eu decidi criar esse site. 
+            “o tal do dev” nasce com uma ideia bem batida, eu confesso, mas que ainda não é bem executada.
+        </p>
+        <p>
+            O ponto principal desse site não é me mostrar para o mundo com o objetivo de ganhar um emprego e, de maneira sínica, falsamente me rebaixar nas publicações para ganhar o engajamento em cima de quem está começando na programação. 
+            Na verdade, o principal objetivo é mostrar erros, acertos e compartilhar vivências de maneira tal que todos estão iniciando percebam que problemas acontecem, desafios vêm, frustrações nos abalam, mas, mesmo com tudo isso acontecendo, continuamos seguindo nossa vontade de estudar e fazer da programação a nossa carreira. 
+            Claro, eu não sou tão iniciante assim, eu já estou a alguns meses estudando programação (depois eu abordo esse tema), então eu vou tentar correr um pouco para fazer as publicações sobre as partes mais básicas de lógica e python (a linguagem que eu mais tenho conhecimento).
+        </p>
+        <p>
+            Portanto, as publicações referentes a tipos básicos, criação de funções, uso de decoradores e afins talvez possam sair com uma aparência mais “sintética”. 
+            Não posso esquecer, lembra quando disse que esse site é para mostrar e compartilhar a minha evolução com todos os erros e acertos? Então, esse site não está pronto ainda e com certeza vai ser alterado conforme eu for aprendendo coisas novas. Vocês vão perceber essas mudanças e vão poder ler sobre como elas ocorrerão comigo.
+        </p>
+        <h2 class="home">Como as postagens vão se parecer?</h2>
+        <p>
+            As postagens terão duas partes, uma mais direta, para quem está naquele sufoco que eu comentei no segundo parágrafo do texto: para quem só quer ver a sintaxe de cara e continuar programando. E a segunda parte vai ser mais explicativa com o intuito de ensinar que nunca viu aquilo antes.
+        </p>
+        <h2 class="home">E quem sou eu?</h2>
+        <p>
+            Repararam que esse bloco de texto não estava no início? Bem, o tal do dev não foi feito para ganhar fama, eu só achei interessante poder compartilhar minha jornada e poder ajudar outras pessoas no processo. Então eu até vou contar um pouco sobre mim, mas não é o ponto principal do site.
+        </p>
+        <h3 class="home">Como comecei? </h3>
+        <p>
+            Tudo começou na faculdade de engenharia elétrica. No primeiro período tive uma matéria (duas na realidade, a prática contava como matéria separada) chamada algoritmos, nessa matéria eu me apaixonei pelo mundo da programação, e olha que a linguagem usada era C.
+        </p>
+        <p>
+            No mesmo período que eu comecei a cursar algoritmos, eu entrei em uma das melhores experiências da minha vida: comecei a fazer parte de uma equipe de competição voltada para o desenvolvimento e construção de foguetes e satélites acadêmicos (eu cheguei a lançar um foguete desses nos EUA, mas isso é história para outro post), dentro dessa equipe um dos meus primeiros trabalhos foi programar o computador de bordo do satélite para enviar e receber informações.
+        </p>
+        <p>
+            Aí você pensa: “Caramba já chegou na faculdade abalando”. Mas tinha um problema: o computador de bordo era um raspberry e, não sei o porquê, eu decidi programar em python. Na época eu não sabia NADA de python (não que hoje eu saiba alguma coisa) e eu estava usnado um transmissor um pouco complexo para mim na época (LoRa sx1276 v2).
+        </p>
+        <p>
+            Eu tinha um sonho e muita força de vontade, um grande contraste em relação as minhas habilidades técnicas na época. Então comecei a estudar sem parar python (aprendi a linguagem em 1 mês), ler o datasheet do transmissor e a virar noites para otimizar meu tempo. Se você tem o mínimo de conhecimento sobre engenharia você já imaginou que o resultado ceve ter ficado uma bosta, sim ficou. Eu fiquei tão traumatizado com esse projeto que o próximo projeto que eu busquei fazer foi relacionado a estrutura do satélite (ainda é um trauma).
+        </p>
+        <p>
+            Mas essa época passou e eu não terminei minha faculdade, tive que me mudar com meus pais para outra cidade e, enquanto esperava o próximo vestibular, resolvi aprender programação
+        </p>
+        <h3 class="home">E o que faço agora?</h3>
+        <p>
+            Hoje estou cursando ADS, ainda estudo para o vestibular (sonho em voltar para a engenharia) e consegui alguns conhecimentos sobre python nesse meio tempo haha.
+        </p>
+        <p>
+            Esse sou eu, esse é o tal do dev.
+        </p>
+        <h2 class="home">Nos vemos por aí (eu espero)</h2>
+        <p>
+            Por fim, quero desejar a todos que leram esse texto até aqui uma boa jornada de aprendizado e que todo desafio venha com uma boa lição para cada um de vocês. E não se esqueçam agora vocês têm um novo parceiro de jornada: O tal do dev. Até mais!
+        </p>
 
     </main>
     <footer>
